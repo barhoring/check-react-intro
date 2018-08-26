@@ -3,12 +3,12 @@
     "api": "node ratingsAPI.js",
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "flow": "flow",
-    "flow:init": "flow init",
     "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\"",
+    "lint": "eslint **/*.{js,jsx} --quiet",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:update": "jest -u"
+    "test:update": "jest -u",
+    "watch": "webpack --watch"
   },
   "jest": {
     "snapshotSerializers": [
@@ -34,7 +34,7 @@
     "react-router-dom": "4.1.1",
     "redux": "3.6.0",
     "redux-thunk": "2.2.0",
-    "styled-components": "2.0.0",
+    "styled-components": "^2.0.0",
     "webpack": "2.6.1",
     "webpack-dev-middleware": "1.10.2",
     "webpack-hot-middleware": "2.18.0"
@@ -51,6 +51,7 @@
     "babel-preset-react": "6.24.1",
     "enzyme": "2.8.2",
     "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
     "eslint-config-prettier": "2.1.1",
     "eslint-config-react": "1.1.7",
     "eslint-loader": "1.7.1",
@@ -60,7 +61,7 @@
     "eslint-plugin-jsx-a11y": "5.0.3",
     "eslint-plugin-prettier": "2.1.1",
     "eslint-plugin-react": "7.0.1",
-    "flow-bin": "0.55.0",
+    "flow-bin": "0.47.0",
     "jest": "20.0.4",
     "jest-serializer-enzyme": "1.0.0",
     "moxios": "0.4.0",

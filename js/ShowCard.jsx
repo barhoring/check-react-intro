@@ -1,5 +1,6 @@
 // @flow
-import React from "react";
+
+import React from 'react';
 // $FlowFixMe
 import styled from 'styled-components';
 
@@ -20,10 +21,7 @@ const Image = styled.img`
 
 const ShowCard = (props: { poster: string, title: string, year: string, description: string }) => (
   <Wrapper>
-    <Image
-      src={`/public/img/posters/${props.poster}`}
-      alt={`${props.title} props poster`}
-      />
+    <Image alt={`${props.title} Show Poster`} src={`/public/img/posters/${props.poster}`} />
     <div>
       <h3>{props.title}</h3>
       <h4>({props.year})</h4>
